@@ -1,0 +1,18 @@
+
+.edit-book-container{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.edit-book{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.edit-book input{
+    width: 400px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
