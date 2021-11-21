@@ -60,8 +60,7 @@ const EditBook = () => {
             {/* <h1 style={{ color: 'black' }}>{id}</h1> */}
 
             <div className='edit-book-container'>
-                <div>
-                    <img width='300' height='350' src={books.image} alt="" />
+                <div style={{ margin: '100px 0px' }}>
                     <h4 style={{ marginTop: '25px' }}>Book title: {books.title}</h4>
                     <h4>Author: {books.author}</h4>
                 </div>
@@ -73,7 +72,6 @@ const EditBook = () => {
                         className='edit-book'
                     >
                         <h2 style={{ marginBottom: '30px' }}>Edit the Book</h2>
-                        <input {...register("image")} onChange={handleImageChange} value={books.image || ''} placeholder='Image url' />
                         <input {...register("title")} onChange={handleTitleChange} value={books.title || ''} placeholder='Book title' />
                         <input {...register("author")} onChange={handleAuthorChange} value={books.author || ''} placeholder='Author name' />
                         <input type="submit" value='Add to List' />
