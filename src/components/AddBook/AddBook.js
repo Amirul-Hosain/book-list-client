@@ -16,7 +16,7 @@ const AddBook = () => {
         }
 
         const formData = new FormData();
-        formData.append('title', title.toLowerCase());
+        formData.append('title', title);
         formData.append('author', author);
         formData.append('image', image);
 
