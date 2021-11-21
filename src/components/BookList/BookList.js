@@ -37,7 +37,7 @@ const BookList = ({ books, setBooks }) => {
 
 
     useEffect(() => {
-        fetch('http://localhost:500/books')
+        fetch('https://powerful-woodland-85495.herokuapp.com/books')
             .then(res => res.json())
             .then(data => {
                 setBooks(data)
@@ -49,7 +49,7 @@ const BookList = ({ books, setBooks }) => {
     const handleDeleteBook = id => {
         const proceed = window.confirm('Are You Sure, You Want to Delete this Book?');
         if (proceed) {
-            const url = `http://localhost:500/books/${id}`;
+            const url = `https://powerful-woodland-85495.herokuapp.com/books/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

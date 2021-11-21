@@ -22,7 +22,7 @@ const AddBook = () => {
 
         console.log(formData);
 
-        fetch('http://localhost:500/books', {
+        fetch('https://powerful-woodland-85495.herokuapp.com/books', {
             method: 'POST',
             body: formData
         })

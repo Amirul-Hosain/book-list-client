@@ -10,7 +10,7 @@ const Header = ({ setBooks }) => {
         setSearch(e.target.value);
     }
     const handleBookSearch = () => {
-        const url = `http://localhost:500/searchEvent?search=${search}`
+        const url = `https://powerful-woodland-85495.herokuapp.com/searchEvent?search=${search}`
         fetch(url)
             .then(res => res.json())
             .then(data => {

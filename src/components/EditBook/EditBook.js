@@ -11,7 +11,7 @@ const EditBook = () => {
 
     // get single book
     useEffect(() => {
-        const url = `http://localhost:500/books/${id}`;
+        const url = `https://powerful-woodland-85495.herokuapp.com/books/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -22,7 +22,7 @@ const EditBook = () => {
 
     // update book
     const onSubmit = data => {
-        const url = `http://localhost:500/books/${id}`;
+        const url = `https://powerful-woodland-85495.herokuapp.com/books/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
